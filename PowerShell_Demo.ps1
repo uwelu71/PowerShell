@@ -1,0 +1,3 @@
+Get-AzADUser
+
+Get-Service
