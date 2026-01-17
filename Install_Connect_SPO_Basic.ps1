@@ -7,7 +7,7 @@ Get-Module -ListAvailable -Name Microsoft.Online.SharePoint.PowerShell | ForEach
     Uninstall-Module -Name $_.Name -AllVersions -Force
 }
 
-Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ListAvailable | Select Name,Version
+Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ListAvailable | Select-Object Name,Version
 
 Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Force
 
