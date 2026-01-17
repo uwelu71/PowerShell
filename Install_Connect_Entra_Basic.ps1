@@ -55,3 +55,11 @@ Get-InstalledModule Microsoft.Entra -AllVersions
 
 Uninstall-Module Microsoft.Graph.Authentication -RequiredVersion 2.15.0
 Uninstall-Module Micrososoft.Entra -RequiredVersion 1.0.2
+
+
+# Connect Entra
+Connect-Entra -Scopes 'User.Read.All'
+Get-EntraUser -Filter "userPrincipalName eq 'admin@M365DS223991.onmicrosoft.com'"
+
+# Disconnect Entra
+Disconnect-Entra
