@@ -26,3 +26,7 @@ Get-MgOrganization | Format-List
 
 # Validation
 Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnable
+
+# Notes
+# Now you can uninstall Entra Connect from the server. Start > Control Panel > Programs and Features
+# Source: https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-uninstall
